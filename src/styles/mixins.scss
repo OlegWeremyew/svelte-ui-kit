@@ -1,0 +1,23 @@
+@mixin iPhonesAfterX {
+  @media only screen and (max-aspect-ratio: 56 / 100) {
+    @content;
+  }
+}
+
+@mixin phones20Ultra {
+  @media only screen and (max-aspect-ratio: 56 / 100) {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media only screen and (min-width: 744px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin tabletLandscape {
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}

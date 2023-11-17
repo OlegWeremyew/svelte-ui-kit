@@ -1,0 +1,125 @@
+*|* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(73, 87, 149);
+    background: rgba(0, 0, 0, 1);
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: auto;
+    -webkit-user-drag: none;
+}
+
+section {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-user-drag: none;
+}
+
+figure {
+    margin: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+cite {
+    font-style: normal;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+    -webkit-appearance: button;
+}
+
+.divtext {
+    display: table;
+    width: 99%;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.price-value {
+    position: relative;
+}
+
+.price-value .loader {
+	display: inline-block;
+	width: 1.1rem;
+	/* height: 100%; */
+}
+
+.price-value .loader svg {
+	transform: scale(2) !important;
+}

@@ -1,0 +1,21 @@
+<svg width="100" height="14" viewBox="0 0 100 14" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="86.316%" y1="91.902%" x2="12.606%" y2="30.469%" id="ppgtc34o2a">
+            <stop stop-color="#FFC96A" offset="0%"/>
+            <stop stop-color="#FF8C1E" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="37.75%" y1="299.278%" x2="37.75%" y2="-93.441%" id="sw149i2hgb">
+            <stop stop-color="#D53127" offset="0%"/>
+            <stop stop-color="#E25426" offset="36.693%"/>
+            <stop stop-color="#E9762D" offset="65.25%"/>
+            <stop stop-color="#F39E3C" offset="99.944%"/>
+            <stop stop-color="#F39E3C" offset="100%"/>
+            <stop stop-color="#F39E3C" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M95 0h2a3 3 0 0 1 3 3v2h-8V3a3 3 0 0 1 3-3z" fill="url(#ppgtc34o2a)"/>
+        <path d="M3 0h2a3 3 0 0 1 3 3v2H0V3a3 3 0 0 1 3-3z" fill="url(#ppgtc34o2a)" transform="matrix(-1 0 0 1 8 0)"/>
+        <path d="M3 0h93.932c-2.596 0-3.894.97-3.894 2.908C93.038 9.034 88.072 14 81.947 14H17.865C11.885 14 7.038 9.153 7.038 3.173 7.038 1.058 5.692 0 3 0z" fill="url(#sw149i2hgb)" transform="matrix(-1 0 0 1 99.932 0)"/>
+    </g>
+</svg>
