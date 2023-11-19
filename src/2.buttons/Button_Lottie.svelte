@@ -5,7 +5,6 @@
 
   onMount(startAnimation)
 
-
   const handlePurchase = () => {
     // sendCallback(
     //   `http://callquietly.io/getpremium/${$activeSubscription.inapp}`
@@ -13,11 +12,11 @@
   };
 
 </script>
-<section className="buttons">
+<section class="buttons">
 	<button
 		id="purchase"
 		type="button"
-		className="continue-button"
+		class="continue-button"
 		class:trial-btn={$isTrialEnabled}
 		on:click={handlePurchase}
 	>

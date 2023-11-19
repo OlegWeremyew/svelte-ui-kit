@@ -2,6 +2,7 @@
 	import Note_Nature_ID from '@/6.notes/Note_Nature_ID.svelte';
 	import Note_In_Pulse from '@/6.notes/Note_In_Pulse.svelte';
 	import Note_Fonts from '@/6.notes/Note_Fonts.svelte';
+	import Note_Wallpapers from '@/6.notes/Note_Wallpapers.svelte';
 </script>
 
 <section class='home'>
@@ -18,6 +19,11 @@
 	<div class='block'>
 		<p> app - fonts-ios</p>
 		<Note_Fonts />
+	</div>
+
+	<div class='block'>
+		<p> app - wallpapers-ios</p>
+		<Note_Wallpapers />
 	</div>
 </section>
 

@@ -144,7 +144,7 @@
     min-height: 100vh;
     padding: 30px 40px;
     background-color: #222;
-		overflow: scroll;
+    overflow: auto;
   }
 
   .page {
@@ -161,6 +161,7 @@
     pointer-events: none;
     opacity: 0;
   }
+
   .animated.visible {
     opacity: 1;
     pointer-events: auto;

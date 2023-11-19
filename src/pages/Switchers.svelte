@@ -4,41 +4,49 @@
 	import Switcher_In_Pulse from '@/1.switchers/Switcher_In_Pulse.svelte';
 	import Switcher_Fonts from '@/1.switchers/Switcher_Fonts.svelte';
 	import Switcher_Fonts_A from '@/1.switchers/Switcher_Fonts_A.svelte';
+	import Switcher_Wallpapers from '@/1.switchers/Switcher_Wallpapers.svelte';
 </script>
 
 <section class='page page--switchers'>
 	<div class='block'>
-		<h3 class='block__subtitle'>Проект - On-skin-ios-</h3>
+		<h3 class='block__subtitle'>Проект - On-skin-ios</h3>
 		<div class='block__component'>
 			<Switcher_On_Skin />
 		</div>
 	</div>
 
 	<div class='block'>
-		<h3 class='block__subtitle'>Проект - nature-id-ios-</h3>
+		<h3 class='block__subtitle'>Проект - nature-id-ios</h3>
 		<div class='block__component'>
 			<Switcher_Nature_ID />
 		</div>
 	</div>
 
 	<div class='block'>
-		<h3 class='block__subtitle'>Проект - in-pulse-ios-</h3>
+		<h3 class='block__subtitle'>Проект - in-pulse-ios</h3>
 		<div class='block__component'>
 			<Switcher_In_Pulse />
 		</div>
 	</div>
 
 	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-ios-</h3>
+		<h3 class='block__subtitle'>Проект - fonts-ios</h3>
 		<div class='block__component'>
 			<Switcher_Fonts />
 		</div>
 	</div>
 
 	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-ios-</h3>
+		<h3 class='block__subtitle'>Проект - fonts-ios</h3>
 		<div class='block__component'>
 			<Switcher_Fonts_A />
+		</div>
+	</div>
+
+	<div class='block'>
+		<h3 class='block__subtitle'>Проект - wallpapers-ios</h3>
+		<div class='block__component'>
+			<Switcher_Wallpapers />
 		</div>
 	</div>
 

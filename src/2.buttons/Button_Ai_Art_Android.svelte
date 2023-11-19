@@ -13,9 +13,10 @@
 	<button
 		id='purchase'
 		type='button'
-		class='purchase-button animated'
+		class='purchase-button'
 		on:click={handlePurchase}
 	>
+		<span class='animated-arta'></span>
 		<span class='button-text'>{t("Continue")}</span>
 		<span class='button-icon'></span>
 	</button>
@@ -32,7 +33,7 @@
       margin-bottom: 1.1rem;
     }
 
-    button {
+    .purchase-button {
       position: relative;
       width: 34.3rem;
       height: 5.6rem;
@@ -42,40 +43,20 @@
       border-radius: 3rem;
       margin: 0 auto;
       overflow: hidden;
+      background: linear-gradient(
+                      90deg,
+                      rgb(0, 255, 150),
+                      rgb(37, 130, 186) 66%,
+                      rgb(85, 62, 225) 90%
+      );
 
       @include iPhonesAfterX {
         width: 35.5rem;
       }
-
-      &.purchase-button {
-        position: relative;
-        background: linear-gradient(
-                        90deg,
-                        rgb(0, 255, 150),
-                        rgb(37, 130, 186) 66%,
-                        rgb(85, 62, 225) 90%
-        );
-      }
-
-      &.animated::before {
-        opacity: 0.7;
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 6.3rem;
-        background-image: url(@/images/buttons/blik.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-        animation-name: Shift;
-        animation-duration: 4.5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-      }
     }
 
     .button-icon {
-			display: block;
+      display: block;
       position: absolute;
       top: 50%;
       right: 1.7rem;
@@ -86,15 +67,29 @@
     }
   }
 
-  @-webkit-keyframes Shift {
+  .animated-arta {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    opacity: 0.7;
+    height: 100%;
+    width: 6.3rem;
+    background-image: url(@/images/buttons/blik.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: Shift 4.5s infinite running linear;
+  }
+
+  @keyframes Shift {
     0% {
-      left: -30%;
+      transform: translateX(-5rem);
     }
     40% {
-      left: 200%
+      transform: translateX(40rem);
     }
     100% {
-      left: 200%
+      transform: translateX(40rem);
     }
   }
 </style>

@@ -8,71 +8,51 @@
 	import Title_On_Skin from '@/4.titles/Title_On_Skin.svelte';
 	import Title_Nature_ID from '@/4.titles/Title_Nature_ID.svelte';
 	import Title_In_Pulse from '@/4.titles/Title_In_Pulse.svelte';
+
+	import TitleWrapper from '@/10.common-component/TitleWrapper.svelte';
+	import Title_Wallpapers from '@/4.titles/Title_Wallpapers.svelte';
 </script>
 
 <section class='page page--titles'>
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-art-android</h3>
-		<div class='block__component'>
-			<Title_Ai_Art_Android />
-		</div>
-	</div>
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-art-android</h3>
-		<div class='block__component'>
-			<Title_Ai_Art_Android_A />
-		</div>
-	</div>
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-art-android</h3>
-		<div class='block__component'>
-			<Title_Ai_Keyboard_Android />
-		</div>
-	</div>
+	<TitleWrapper appName='ai-art-android'>
+		<Title_Ai_Art_Android />
+	</TitleWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-keyboard-android</h3>
-		<div class='block__component'>
-			<Title_Ai_Keyboard_Android_A />
-		</div>
-	</div>
+	<TitleWrapper appName='ai-art-android'>
+		<Title_Ai_Art_Android_A />
+	</TitleWrapper>
 
-	<div class='block'>
-		<h2 class='block__title'>Заголовок с дополнительным изображениями</h2>
-		<h3 class='block__subtitle'>Проект - coinId-banners</h3>
-		<div class='block__component'>
-			<Title_Coin />
-		</div>
-	</div>
+	<TitleWrapper appName='ai-keyboard-android'>
+		<Title_Ai_Keyboard_Android />
+	</TitleWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - chat-android</h3>
-		<div class='block__component'>
-			<Title_Chat_Android />
-		</div>
-	</div>
+	<TitleWrapper appName='ai-keyboard-android'>
+		<Title_Ai_Keyboard_Android_A />
+	</TitleWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - on-skin-ios</h3>
-		<div class='block__component'>
-			<Title_On_Skin />
-		</div>
-	</div>
+	<TitleWrapper appName='coinId-banners' isExtraTitle>
+		<Title_Coin />
+	</TitleWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - nature-id-ios</h3>
-		<div class='block__component'>
-			<Title_Nature_ID />
-		</div>
-	</div>
+	<TitleWrapper appName='chat-android'>
+		<Title_Chat_Android />
+	</TitleWrapper>
 
+	<TitleWrapper appName='on-skin-ios'>
+		<Title_On_Skin />
+	</TitleWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - in-pulse-ios</h3>
-		<div class='block__component'>
-			<Title_In_Pulse/>
-		</div>
-	</div>
+	<TitleWrapper appName='nature-id-ios' isWhite>
+		<Title_Nature_ID />
+	</TitleWrapper>
+
+	<TitleWrapper appName='in-pulse-ios'>
+		<Title_In_Pulse/>
+	</TitleWrapper>
+
+	<TitleWrapper appName='wallpapers-ios'>
+		<Title_Wallpapers/>
+	</TitleWrapper>
 </section>
 
 <style lang='scss'>
@@ -81,38 +61,7 @@
   .page--titles {
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
-  }
-
-  .block {
-    height: 250px;
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &__title {
-      font-size: 20px;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 5px;
-    }
-
-    &__subtitle {
-      font-size: 16px;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-
-    &__component {
-      width: 35rem;
-    }
   }
 </style>

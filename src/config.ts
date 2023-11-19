@@ -38,6 +38,7 @@ export const tapOnLegalInfoStat = (info: string, bannerId: string): string =>
   `callquietly://callquietly.io/amplitude_statistic?event_name=tap_info_banner&tap=${info}&placement=embedded-launch&banner=${bannerId}`;
 export const restorePurchaseStat = (bannerId: string): string =>
   `http://callquietly.io/statistic?amplitude_event_name=restore_purchase_started&param=banner_id:${bannerId}`;
+export const purchaseStat = (bannerId, inapp) => `http://callquietly.io/statistic?path=get_premium_by_banner/${bannerId}/clicked/${inapp}`
 
 // switch off loading animation
 export const disableBuiltinAnimations = 1;

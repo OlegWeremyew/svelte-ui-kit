@@ -13,106 +13,75 @@
 	import ButtonWatchVideo_Iremover_A from '@/2.buttons/ButtonWatchVideo_Iremover_A.svelte';
 	import Button_Fonts from '@/2.buttons/Button_Fonts.svelte';
 	import Button_Fonts_A from '@/2.buttons/Button_Fonts_A.svelte';
+	import ButtonsWrapper from '@/10.common-component/ButtonsWrapper.svelte';
+	import Buttons_Live_Wallpapers from '@/2.buttons/Buttons_Live_Wallpapers.svelte';
+	import Buttons_Live_Wallpapers_A from '@/2.buttons/Buttons_Live_Wallpapers_A.svelte';
 </script>
 
 <section class='page page--buttons'>
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-android</h3>
-		<div class='block__component block__component--small'>
-			<Button_Lottie />
-		</div>
-	</div>
+	<ButtonsWrapper appName='fonts-android' isSmall>
+		<Button_Lottie />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-art-android</h3>
-		<div class='block__component'>
-			<Button_Ai_Art_Android />
-		</div>
-	</div>
+	<ButtonsWrapper appName='ai-art-android'>
+		<Button_Ai_Art_Android />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-art-android</h3>
-		<div class='block__component'>
-			<Button_Ai_Art_Android_A />
-		</div>
-	</div>
+	<ButtonsWrapper appName='ai-art-android'>
+		<Button_Ai_Art_Android_A />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-art-android</h3>
-		<div class='block__component'>
-			<Button_Ai_Art_Android_AA />
-		</div>
-	</div>
+	<ButtonsWrapper appName='ai-art-android'>
+		<Button_Ai_Art_Android_AA />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - ai-keyboard-android</h3>
-		<div class='block__component'>
-			<Button_Ai_Keyboard_Android />
-		</div>
-	</div>
+	<ButtonsWrapper appName='ai-keyboard-android'>
+		<Button_Ai_Keyboard_Android />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - coinId</h3>
-		<div class='block__component'>
-			<Button_Coin />
-		</div>
-	</div>
+	<ButtonsWrapper appName='coin-id-ios'>
+		<Button_Coin />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-android</h3>
-		<div class='block__component'>
-			<Button_Chat_Android />
-		</div>
-	</div>
+	<ButtonsWrapper appName='fonts-android'>
+		<Button_Chat_Android />
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - on-skin-ios</h3>
-		<div class='block__component'>
-			<Button_On_Skin/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='on-skin-ios'>
+		<Button_On_Skin/>
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - nature-id-ios</h3>
-		<div class='block__component'>
-			<Buttons_Nature_ID/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='nature-id-ios'>
+		<Buttons_Nature_ID/>
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - in-pulse-ios</h3>
-		<div class='block__component'>
-			<Buttons_In_Pulse/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='in-pulse-ios'>
+		<Buttons_In_Pulse/>
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - in-remover-ios</h3>
-		<div class='block__component'>
-			<ButtonWatchVideo_Iremover/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='in-remover-ios'>
+		<ButtonWatchVideo_Iremover/>
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - in-remover-ios</h3>
-		<div class='block__component'>
-			<ButtonWatchVideo_Iremover_A/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='in-remover-ios'>
+		<ButtonWatchVideo_Iremover_A/>
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-ios</h3>
-		<div class='block__component'>
-			<Button_Fonts/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='fonts-ios'>
+		<Button_Fonts/>
+	</ButtonsWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-ios</h3>
-		<div class='block__component'>
-			<Button_Fonts_A/>
-		</div>
-	</div>
+	<ButtonsWrapper appName='fonts-ios'>
+		<Button_Fonts_A/>
+	</ButtonsWrapper>
+
+	<ButtonsWrapper appName='wallpapers-ios'>
+		<Buttons_Live_Wallpapers/>
+	</ButtonsWrapper>
+
+	<ButtonsWrapper appName='wallpapers-ios'>
+		<Buttons_Live_Wallpapers_A/>
+	</ButtonsWrapper>
 </section>
 
 <style lang='scss'>
@@ -128,34 +97,6 @@
     @media (max-width: 1150px) {
       flex-direction: column;
       align-items: center;
-
-    }
-  }
-
-  .block {
-    height: 180px;
-    padding: 10px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-
-  .block__subtitle {
-    margin-bottom: 10px;
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  .block__component {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-
-    &--small {
-      width: 400px;
     }
   }
 </style>
