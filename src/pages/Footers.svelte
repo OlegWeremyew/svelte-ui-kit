@@ -1,20 +1,20 @@
 <script>
-import Footer_In_Pulse from '@/7.footers/Footer_In_Pulse.svelte';
-import Footer_Fonts from '@/7.footers/Footer_Fonts.svelte';
+import FootersWrapper from '@/10.common-component/FootersWrapper.svelte';
+import Footer_Fonts from '@/7.footers/Footer_Fonts/Footer_Fonts.svelte';
+import Footer_In_Pulse from '@/7.footers/Footer_In_Pulse/Footer_In_Pulse.svelte';
+import Footer_Ai_Assistant from '@/7.footers/Footer_Ai_Assistant/Footer_Ai_Assistant.svelte';
 </script>
 
-<section class="home">
-	<div>
-		<p>app - in-pulse-ios</p>
+<section class='home'>
+	<FootersWrapper appName='in-pulse-ios'>
 		<Footer_In_Pulse/>
-	</div>
+	</FootersWrapper>
 
-	<div style='background: #eee;'>
-		<p>app - fonts-ios</p>
+	<FootersWrapper appName='fonts-ios'>
 		<Footer_Fonts/>
-	</div>
-</section>
+	</FootersWrapper>
 
-<style lang="scss">
-  @import "./src/styles/mixins.scss";
-</style>
+	<FootersWrapper appName='ai-assistant'>
+		<Footer_Ai_Assistant/>
+	</FootersWrapper>
+</section>

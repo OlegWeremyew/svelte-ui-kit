@@ -1,41 +1,32 @@
 <script>
-	import Note_Nature_ID from '@/6.notes/Note_Nature_ID.svelte';
-	import Note_In_Pulse from '@/6.notes/Note_In_Pulse.svelte';
-	import Note_Fonts from '@/6.notes/Note_Fonts.svelte';
-	import Note_Wallpapers from '@/6.notes/Note_Wallpapers.svelte';
+	import NotesWrapper from '@/10.common-component/NotesWrapper.svelte';
+	import Note_In_Pulse from '@/6.notes/Note_In_Pulse/Note_In_Pulse.svelte';
+	import Note_Fonts from '@/6.notes/Note_Fonts/Note_Fonts.svelte';
+	import Note_Nature_ID from '@/6.notes/Note_Nature_ID/Note_Nature_ID.svelte';
+	import Note_Wallpapers from '@/6.notes/Note_Wallpapers/Note_Wallpapers.svelte';
+	import Note_Ai_Assistant from '@/6.notes/Note_Ai_Assistant/Note_Ai_Assistant.svelte';
 </script>
 
 <section class='home'>
-	<div class='block'>
-		<p> app - nature-id-ios</p>
+	<NotesWrapper appName='nature-id-ios'>
 		<Note_Nature_ID />
-	</div>
+	</NotesWrapper>
 
-	<div class='block'>
-		<p> app - in-pulse-ios</p>
+	<NotesWrapper appName='in-pulse-ios'>
 		<Note_In_Pulse />
-	</div>
+	</NotesWrapper>
 
-	<div class='block'>
-		<p> app - fonts-ios</p>
+	<NotesWrapper appName='fonts-ios'>
 		<Note_Fonts />
-	</div>
+	</NotesWrapper>
 
-	<div class='block'>
-		<p> app - wallpapers-ios</p>
+	<NotesWrapper appName='wallpapers-ios'>
 		<Note_Wallpapers />
-	</div>
+	</NotesWrapper>
+
+	<NotesWrapper appName='ai-assistant-ios'>
+		<Note_Ai_Assistant />
+	</NotesWrapper>
 </section>
 
-<style lang='scss'>
-  @import "./src/styles/mixins.scss";
-
-  .home {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .block {
-    width: 20rem;
-  }
-</style>
+<style lang='scss'></style>

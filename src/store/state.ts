@@ -18,6 +18,7 @@ export const isYearActive: IYearEnabled = writable(true);
 export const isSwitcherActive: ISwitcherActive = writable(false);
 export const isTrialEnabled:ITrialAvailable =  writable(false);
 export const isTrialAvailable:ITrialAvailable =  writable(false);
+export const isShowAnimation:any =  writable(false);
 
 export const slide: ISlide = writable(1);
 

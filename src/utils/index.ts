@@ -7,3 +7,4 @@ export * from './url-variables';
 export * from './load-animation';
 export * from './start-animation';
 export * from './stop-animation';
+export * from './calculate-sale';

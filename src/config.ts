@@ -1,6 +1,12 @@
 export const bannerId = "086";
 const placement = 'premium_banner'
 
+export enum Subscribes {
+  year = "wallpapers.live.sub.gr4.1y.3.trial_35",
+  week = "wallpapers.live.sub.gr2.1w",
+  weekTrial = "wallpapers.live.sub.gr4.1w.3.trial",
+}
+
 export const injectdata = {
   inapps: {
     "aiart.lifetime_30": {

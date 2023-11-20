@@ -1,54 +1,42 @@
 <script>
-	import Switcher_On_Skin from '@/1.switchers/Switcher_On_Skin.svelte';
-	import Switcher_Nature_ID from '@/1.switchers/Switcher_Nature_ID.svelte';
-	import Switcher_In_Pulse from '@/1.switchers/Switcher_In_Pulse.svelte';
-	import Switcher_Fonts from '@/1.switchers/Switcher_Fonts.svelte';
-	import Switcher_Fonts_A from '@/1.switchers/Switcher_Fonts_A.svelte';
-	import Switcher_Wallpapers from '@/1.switchers/Switcher_Wallpapers.svelte';
+	import Switcher_Chat from '@/1.switchers/Switcher_Chat/Switcher_Chat.svelte';
+	import SwitchersWrapper from '@/10.common-component/SwitchersWrapper.svelte';
+	import Switcher_On_Skin from '@/1.switchers/Switcher_On_Skin/Switcher_On_Skin.svelte';
+	import Switcher_In_Pulse from '@/1.switchers/Switcher_In_Pulse/Switcher_In_Pulse.svelte';
+	import Switcher_Nature_ID from '@/1.switchers/Switcher_Nature_ID/Switcher_Nature_ID.svelte';
+	import Switcher_Fonts from '@/1.switchers/Switcher_Fonts/Switcher_Fonts.svelte';
+	import Switcher_Fonts_A from '@/1.switchers/Switcher_Fonts_A/Switcher_Fonts_A.svelte';
+	import Switcher_Wallpapers from '@/1.switchers/Switcher_Wallpapers/Switcher_Wallpapers.svelte';
 </script>
 
-<section class='page page--switchers'>
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - On-skin-ios</h3>
-		<div class='block__component'>
-			<Switcher_On_Skin />
-		</div>
-	</div>
+<section class='page'>
+	<SwitchersWrapper appName='On-skin-ios'>
+		<Switcher_On_Skin />
+	</SwitchersWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - nature-id-ios</h3>
-		<div class='block__component'>
-			<Switcher_Nature_ID />
-		</div>
-	</div>
+	<SwitchersWrapper appName='nature-id-ios'>
+		<Switcher_Nature_ID />
+	</SwitchersWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - in-pulse-ios</h3>
-		<div class='block__component'>
-			<Switcher_In_Pulse />
-		</div>
-	</div>
+	<SwitchersWrapper appName='in-pulse-ios'>
+		<Switcher_In_Pulse />
+	</SwitchersWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-ios</h3>
-		<div class='block__component'>
-			<Switcher_Fonts />
-		</div>
-	</div>
+	<SwitchersWrapper appName='fonts-ios'>
+		<Switcher_Fonts />
+	</SwitchersWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - fonts-ios</h3>
-		<div class='block__component'>
-			<Switcher_Fonts_A />
-		</div>
-	</div>
+	<SwitchersWrapper appName='fonts-ios'>
+		<Switcher_Fonts_A />
+	</SwitchersWrapper>
 
-	<div class='block'>
-		<h3 class='block__subtitle'>Проект - wallpapers-ios</h3>
-		<div class='block__component'>
-			<Switcher_Wallpapers />
-		</div>
-	</div>
+	<SwitchersWrapper appName='wallpapers-ios'>
+		<Switcher_Wallpapers />
+	</SwitchersWrapper>
+
+	<SwitchersWrapper appName='chat-ios'>
+		<Switcher_Chat />
+	</SwitchersWrapper>
 
 </section>
 
@@ -58,40 +46,12 @@
   .page {
     width: 100%;
     height: auto;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
-    @media (max-width: 1150px) {
+    @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
-    }
-  }
-
-  .block {
-    margin-top: 1.5rem;
-    height: 120px;
-    padding: 10px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-
-  .block__subtitle {
-    margin-bottom: 10px;
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  .block__component {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-
-    &--small {
-      width: 400px;
     }
   }
 </style>

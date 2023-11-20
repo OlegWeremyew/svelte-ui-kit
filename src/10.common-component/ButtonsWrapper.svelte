@@ -4,8 +4,8 @@
 </script>
 
 <div class='buttons-block'>
-	<h3 class='block__subtitle'>Проект - {appName}</h3>
-	<div class='block__component' class:small={isSmall}>
+	<h3 class='buttons__subtitle'>Проект - {appName}</h3>
+	<div class='buttons__component' class:small={isSmall}>
 		<slot/>
 	</div>
 </div>
@@ -14,22 +14,25 @@
   @import "./src/styles/mixins.scss";
 
   .buttons-block {
-    height: 160px;
-    padding: 10px;
-    margin-left: 20px;
+	  min-width: 32rem;
+    min-height: 120px;
+    padding: 1.5rem;
+	  border-radius: 20px;
+	  border: 1px solid gray;
+    margin: 0.5rem;
 
     &:first-child {
       margin-left: 0;
     }
   }
 
-  .block__subtitle {
+  .buttons__subtitle {
     margin-bottom: 10px;
     text-align: left;
     padding-left: 20px;
   }
 
-  .block__component {
+  .buttons__component {
     background-color: transparent;
     display: flex;
     align-items: center;

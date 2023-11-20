@@ -1,5 +1,6 @@
 <script>
-import Swiper_Nature_ID from '@/8.swipers/Swiper_Nature_ID.svelte';
+
+import Swiper_Nature_ID from '@/8.swipers/Swiper_Nature_ID/Swiper_Nature_ID.svelte';
 </script>
 
 <section class="home">

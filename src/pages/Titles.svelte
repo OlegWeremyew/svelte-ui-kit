@@ -1,16 +1,15 @@
 <script>
-	import Title_Ai_Art_Android from '@/4.titles/Title_Ai_Art_Android.svelte';
-	import Title_Ai_Art_Android_A from '@/4.titles/Title_Ai_Art_Android_A.svelte';
-	import Title_Ai_Keyboard_Android from '@/4.titles/Title_Ai_Keyboard_Android.svelte';
-	import Title_Ai_Keyboard_Android_A from '@/4.titles/Title_Ai_Keyboard_Android_A.svelte';
-	import Title_Coin from '@/4.titles/Title_Coin.svelte';
-	import Title_Chat_Android from '@/4.titles/Title_Chat_Android.svelte';
-	import Title_On_Skin from '@/4.titles/Title_On_Skin.svelte';
-	import Title_Nature_ID from '@/4.titles/Title_Nature_ID.svelte';
-	import Title_In_Pulse from '@/4.titles/Title_In_Pulse.svelte';
-
 	import TitleWrapper from '@/10.common-component/TitleWrapper.svelte';
-	import Title_Wallpapers from '@/4.titles/Title_Wallpapers.svelte';
+	import Title_Ai_Art_Android from '@/4.titles/Title_Ai_Art_Android/Title_Ai_Art_Android.svelte';
+	import Title_Ai_Art_Android_A from '@/4.titles/Title_Ai_Art_Android_A/Title_Ai_Art_Android_A.svelte';
+	import Title_Ai_Keyboard_Android from '@/4.titles/Title_Ai_Keyboard_Android/Title_Ai_Keyboard_Android.svelte';
+	import Title_Ai_Keyboard_Android_A from '@/4.titles/Title_Ai_Keyboard_Android_A/Title_Ai_Keyboard_Android_A.svelte';
+	import Title_Coin from '@/4.titles/Title_Coin/Title_Coin.svelte';
+	import Title_Chat_Android from '@/4.titles/Title_Chat_Android/Title_Chat_Android.svelte';
+	import Title_On_Skin from '@/4.titles/Title_On_Skin/Title_On_Skin.svelte';
+	import Title_Nature_ID from '@/4.titles/Title_Nature_ID/Title_Nature_ID.svelte';
+	import Title_In_Pulse from '@/4.titles/Title_In_Pulse/Title_In_Pulse.svelte';
+	import Title_Wallpapers from '@/4.titles/Title_Wallpapers/Title_Wallpapers.svelte';
 </script>
 
 <section class='page page--titles'>
@@ -30,7 +29,7 @@
 		<Title_Ai_Keyboard_Android_A />
 	</TitleWrapper>
 
-	<TitleWrapper appName='coinId-banners' isExtraTitle>
+	<TitleWrapper appName='coinId-banners'>
 		<Title_Coin />
 	</TitleWrapper>
 

@@ -1,13 +1,9 @@
 <script>
 	export let appName;
-	export let isExtraTitle = false;
 	export let isWhite = false;
 </script>
 
 <div class='block' class:white={isWhite}>
-	{#if (isExtraTitle)}
-		<h2 class='block__title'>Заголовок с дополнительным изображениями</h2>
-	{/if}
 	<h3 class='block__subtitle'>Проект - {appName}</h3>
 	<div class='block__component'>
 		<slot />

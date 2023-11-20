@@ -13,19 +13,51 @@
 	import { PATHS } from '@/constants/router.ts';
 	import Other from '@/pages/Other.svelte';
 
-	let currentPath = window.location.pathname;
+	import {
+		isTrialEnabled,
+		subscriptions,
+		activeSubscription,
+		isSwitcherActive,
+		isShowAnimation,
+	} from '@/store/state.ts';
 
-	onMount(() => {
-		setFontSizes();
-		console.log(currentPath);
+	const setActiveSubscription = () => ({
+		period: $isTrialEnabled ? 'week' : 'year',
+		inapp: $isTrialEnabled ? $subscriptions.week : $subscriptions.year,
 	});
+
+	const changeMode = () => {
+		isTrialEnabled.update(() => !$isTrialEnabled);
+		isSwitcherActive.update(() => !$isSwitcherActive);
+
+		activeSubscription.update(() => ({
+			period: setActiveSubscription().period,
+			inapp: setActiveSubscription().inapp,
+		}));
+	};
+
+	const changeActiveMode = () => {
+		isShowAnimation.update(() => !$isShowAnimation);
+	};
+
+	onMount(() => setFontSizes());
 </script>
 
 
 <div id='app'>
 	<Router primary={false}>
 		<header>
-			<div class='logo'></div>
+			<div class='header-line'>
+				<div class='logo' on:click={changeMode}>
+					<div class='mode-button' class:active={$isTrialEnabled}></div>
+					<p class='status-mode'>status - {$isTrialEnabled ? 'active' : 'inactive'}</p>
+				</div>
+				<div class='active' on:click={changeActiveMode}>
+					<div class='mode-button' class:active={$isShowAnimation}></div>
+					<p class='status-mode'>animation status - {$isShowAnimation ? 'active' : 'inactive'}</p>
+				</div>
+			</div>
+
 			<nav class='nav'>
 				<Link class='link' to={PATHS.SWITCHERS}>Switchers</Link>
 				<Link class='link' to={PATHS.BUTTONS}>Button</Link>
@@ -68,6 +100,7 @@
 			</Route>
 		</main>
 	</Router>
+
 </div>
 
 <style lang='scss' global>
@@ -95,6 +128,9 @@
   }
 
   header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     width: 100%;
     height: 40px;
     background-color: #333333;
@@ -103,15 +139,40 @@
     align-items: center;
     border-bottom: 1px solid gray;
 
-    .logo {
-      margin-left: 15px;
-      width: 30px;
-      height: 30px;
-      border-radius: 4px;
-      background-image: url('./images/icon.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    .header-line {
+		  display: flex;
+    }
+
+    .logo,
+    .active {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      height: 39px;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #222;
+      }
+
+      .mode-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: red;
+        border: 2px solid white;
+
+        &.active {
+          background-color: green;
+          border: 2px solid yellow;
+        }
+      }
+    }
+
+    .status-mode {
+      margin-left: 10px;
+      font-size: 1.4rem;
     }
 
     nav {
@@ -165,5 +226,11 @@
   .animated.visible {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 </style>

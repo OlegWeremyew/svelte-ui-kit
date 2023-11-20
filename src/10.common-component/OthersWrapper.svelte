@@ -1,0 +1,53 @@
+<script>
+	export let appName;
+	export let animationText = '';
+	export let isWhite = false;
+	export let isWhiteTitle = false;
+</script>
+
+<div class='others-block' class:white={isWhite}>
+	<h2>{animationText}</h2>
+	<h3
+		class='others-block__subtitle'
+		class:whiteText={isWhiteTitle}
+		style='color: #222222'
+	>
+		Проект - {appName}
+	</h3>
+	<div class='others-block__component'>
+		<slot />
+	</div>
+</div>
+
+<style lang='scss'>
+  .others-block {
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    border: 1px solid gray;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.white {
+      background-color: #fff;
+    }
+  }
+
+  .others-block__subtitle {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .others-block__component {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whiteText {
+    color: #fff !important;
+  }
+</style>
