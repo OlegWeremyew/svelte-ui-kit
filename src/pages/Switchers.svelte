@@ -7,6 +7,7 @@
 	import Switcher_Fonts from '@/1.switchers/Switcher_Fonts/Switcher_Fonts.svelte';
 	import Switcher_Fonts_A from '@/1.switchers/Switcher_Fonts_A/Switcher_Fonts_A.svelte';
 	import Switcher_Wallpapers from '@/1.switchers/Switcher_Wallpapers/Switcher_Wallpapers.svelte';
+	import Switcher_Nature_ID_A from '@/1.switchers/Switcher_Nature_ID_A/Switcher_Nature_ID_A.svelte';
 </script>
 
 <section class='page'>
@@ -38,6 +39,9 @@
 		<Switcher_Chat />
 	</SwitchersWrapper>
 
+	<SwitchersWrapper appName='nature-id-ios'>
+		<Switcher_Nature_ID_A />
+	</SwitchersWrapper>
 </section>
 
 <style lang='scss'>

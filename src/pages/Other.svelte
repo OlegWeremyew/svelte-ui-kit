@@ -4,6 +4,7 @@
 		from '@/9.others/Other_Images_Switcher_Button_Ai_Art_Android/Other_Images_Switcher_Button_Ai_Art_Android.svelte';
 	import Other_Timer_Ai_Keyboard_Ios from '@/9.others/Other_Timer_Ai_Keyboard_Ios/Other_Timer_Ai_Keyboard_Ios.svelte';
 	import Other_Ai_Assistant from '@/9.others/Other_Ai_Assistant/Other_Ai_Assistant.svelte';
+	import Other_Search_Message from '@/9.others/Other_Search_Message/Other_Search_Message.svelte';
 </script>
 
 <section class='page-other'>
@@ -17,6 +18,10 @@
 
 	<OthersWrapper animationText='запустите анимацию' appName='ai-assistant'>
 		<Other_Ai_Assistant />
+	</OthersWrapper>
+
+	<OthersWrapper animationText='запустите анимацию' appName='ai-assistant' isFull>
+		<Other_Search_Message title="Enter the description" question="Female, 20s, blond hair, green eyes"/>
 	</OthersWrapper>
 </section>
 

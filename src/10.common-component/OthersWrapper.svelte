@@ -3,9 +3,10 @@
 	export let animationText = '';
 	export let isWhite = false;
 	export let isWhiteTitle = false;
+	export let isFull = false;
 </script>
 
-<div class='others-block' class:white={isWhite}>
+<div class='others-block' class:white={isWhite} class:full={isFull}>
 	<h2>{animationText}</h2>
 	<h3
 		class='others-block__subtitle'
@@ -32,6 +33,11 @@
 
     &.white {
       background-color: #fff;
+    }
+
+    &.full {
+      width: 100%;
+      max-width: 600px;
     }
   }
 

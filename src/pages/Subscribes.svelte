@@ -9,6 +9,7 @@
 	import Subscribes_Ai_Assistant from '@/3.subscripes/Subscribes_Ai_Assistant/Subscribes_Ai_Assistant.svelte';
 	import Subscribes_Ai_Keyboard from '@/3.subscripes/Subscribes_Ai_Keyboard/Subscribes_Ai_Keyboard.svelte';
 	import Subscribes_Ai_Keyboard_A from '@/3.subscripes/Subscribes_Ai_Keyboard_A/Subscribes_Ai_Keyboard_A.svelte';
+	import Subscribes_Nature_ID_A from '@/3.subscripes/Subscribes_Nature_ID_A/Subscribes_Nature_ID_A.svelte';
 </script>
 
 <section class='home'>
@@ -32,7 +33,6 @@
 		<Subscribes_Chat />
 	</SubscribesWrapper>
 
-
 	<SubscribesWrapper appName='chat-android'>
 		<Subscribes_Chat_A />
 	</SubscribesWrapper>
@@ -47,6 +47,10 @@
 
 	<SubscribesWrapper appName='ai-keyboard-android'>
 		<Subscribes_Ai_Keyboard_A />
+	</SubscribesWrapper>
+
+	<SubscribesWrapper appName='nature-id-ios'>
+		<Subscribes_Nature_ID_A />
 	</SubscribesWrapper>
 </section>
 

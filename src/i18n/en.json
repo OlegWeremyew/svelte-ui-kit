@@ -113,5 +113,11 @@
   "Yearly Access": "Yearly Access",
   "<strong>{{price}}</strong>/year": "<strong>{{price}}</strong>/year",
   "just {{price}}/week": "just {{price}}/week",
-  "{{price}} <strong>per week</strong>": "{{price}} <strong>per week</strong>"
+  "{{price}} <strong>per week</strong>": "{{price}} <strong>per week</strong>",
+  "<strong>then {{price}}</strong><br>per week": "<strong>then {{price}}</strong><br>per week",
+  "{{price}}<br>per week": "{{price}}<br>per week",
+  "Free trial enabled": "Free trial enabled",
+  "Enable free trial": "Enable free trial",
+  "Female, 20s, blond hair, green eyes": "Female, 20s, blond hair, green eyes",
+  "Enter the description": "Enter the description"
 }
