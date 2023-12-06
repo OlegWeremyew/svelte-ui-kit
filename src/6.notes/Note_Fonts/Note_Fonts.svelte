@@ -35,15 +35,6 @@
     pointer-events: none;
     z-index: 0;
 
-    @include iPhonesAfterX {
-      transform: translateY(-122%);
-    }
-
-    @include tabletPortrait {
-      font-size: 1.2rem;
-      transform: translateY(-127%);
-    }
-
     &::before,
     &::after {
       content: "";

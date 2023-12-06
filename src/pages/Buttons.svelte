@@ -16,6 +16,7 @@
 	import ButtonsWrapper from '@/10.common-component/ButtonsWrapper.svelte';
 	import Buttons_Live_Wallpapers from '@/2.buttons/Buttons_Live_Wallpapers/Buttons_Live_Wallpapers.svelte';
 	import Buttons_Live_Wallpapers_A from '@/2.buttons/Buttons_Live_Wallpapers_A/Buttons_Live_Wallpapers_A.svelte';
+	import Button_Solvo from '@/2.buttons/Button_Solvo/Button_Solvo.svelte';
 </script>
 
 <section class='page-buttons'>
@@ -48,39 +49,43 @@
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='on-skin-ios'>
-		<Button_On_Skin/>
+		<Button_On_Skin />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='nature-id-ios'>
-		<Buttons_Nature_ID/>
+		<Buttons_Nature_ID />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='in-pulse-ios'>
-		<Buttons_In_Pulse/>
+		<Buttons_In_Pulse />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='in-remover-ios'>
-		<ButtonWatchVideo_Iremover/>
+		<ButtonWatchVideo_Iremover />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='in-remover-ios'>
-		<ButtonWatchVideo_Iremover_A/>
+		<ButtonWatchVideo_Iremover_A />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='fonts-ios'>
-		<Button_Fonts/>
+		<Button_Fonts />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='fonts-ios'>
-		<Button_Fonts_A/>
+		<Button_Fonts_A />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='wallpapers-ios'>
-		<Buttons_Live_Wallpapers/>
+		<Buttons_Live_Wallpapers />
 	</ButtonsWrapper>
 
 	<ButtonsWrapper appName='wallpapers-ios'>
-		<Buttons_Live_Wallpapers_A/>
+		<Buttons_Live_Wallpapers_A />
+	</ButtonsWrapper>
+
+	<ButtonsWrapper appName='solvo-ios'>
+		<Button_Solvo />
 	</ButtonsWrapper>
 </section>
 

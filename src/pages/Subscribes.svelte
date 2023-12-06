@@ -10,6 +10,9 @@
 	import Subscribes_Ai_Keyboard from '@/3.subscripes/Subscribes_Ai_Keyboard/Subscribes_Ai_Keyboard.svelte';
 	import Subscribes_Ai_Keyboard_A from '@/3.subscripes/Subscribes_Ai_Keyboard_A/Subscribes_Ai_Keyboard_A.svelte';
 	import Subscribes_Nature_ID_A from '@/3.subscripes/Subscribes_Nature_ID_A/Subscribes_Nature_ID_A.svelte';
+	import Subscribes_Solvo from '@/3.subscripes/Subscribes_Solvo (no completed)/Subscribes_Solvo.svelte';
+	import Subscribes_AI_Arta_A from '@/3.subscripes/Subscribes_AI_Arta_A/Subscribes_AI_Arta_A.svelte';
+	import Subscribes_Chat_AA from '@/3.subscripes/Subscribes_Chat_AA/Subscribes_Chat_AA.svelte';
 </script>
 
 <section class='home'>
@@ -51,6 +54,18 @@
 
 	<SubscribesWrapper appName='nature-id-ios'>
 		<Subscribes_Nature_ID_A />
+	</SubscribesWrapper>
+
+	<SubscribesWrapper appName='solvo-ios'>
+		<Subscribes_Solvo />
+	</SubscribesWrapper>
+
+	<SubscribesWrapper appName='ia-arta-andriod'>
+		<Subscribes_AI_Arta_A />
+	</SubscribesWrapper>
+
+	<SubscribesWrapper appName='chat-on-ios'>
+		<Subscribes_Chat_AA />
 	</SubscribesWrapper>
 </section>
 

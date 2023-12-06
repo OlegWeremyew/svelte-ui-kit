@@ -6,14 +6,11 @@ import {
   ISubscriptions,
   ISwitcherActive,
   IPrice,
-  IYearEnabled,
   IBannerId,
   ITrialAvailable, ISlide,
 } from './types';
 
 export const bannerId: IBannerId = writable(config.bannerId);
-
-export const isYearActive: IYearEnabled = writable(true);
 
 export const isSwitcherActive: ISwitcherActive = writable(false);
 export const isTrialEnabled:ITrialAvailable =  writable(false);
@@ -47,6 +44,7 @@ export const subscriptions: ISubscriptions = writable({
 
 export const activeSubscription: IActiveSubscription = writable({
   period: 'week',
+  periodWeek: 'weekTrial',
   inapp: config.lifetimeSubscription,
 });
 

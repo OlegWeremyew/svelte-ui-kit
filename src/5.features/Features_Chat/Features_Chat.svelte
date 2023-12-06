@@ -30,14 +30,13 @@
 </section>
 
 <style lang="scss">
-	@import "../../styles/mixins.scss";
+  @import "./src/styles/mixins.scss";
 
 	.features {
-		margin: 0 auto;
+		margin: 0 auto 2.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 2.5rem;
 
 		@include iPhonesAfterX {
 			margin-bottom: 2.7rem;

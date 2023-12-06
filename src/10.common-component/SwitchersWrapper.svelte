@@ -1,10 +1,11 @@
 <script>
 	export let appName;
 	export let isWhite = false;
+	export let isGray = false;
 	export let isSmall = false;
 </script>
 
-<div class='switchers-block' class:small={isSmall} class:white={isWhite}>
+<div class='switchers-block' class:small={isSmall} class:white={isWhite} class:gray={isGray}>
 	<h3 class='switchers__subtitle'>Проект - {appName}</h3>
 	<div class='switchers__component'>
 		<slot/>
@@ -27,6 +28,10 @@
     &.white {
       background-color: #fff;
     }
+
+	  &.gray{
+      background-color: gray;
+	  }
   }
 
   .switchers__subtitle {

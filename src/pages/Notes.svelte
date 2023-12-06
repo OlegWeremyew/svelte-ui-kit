@@ -5,6 +5,7 @@
 	import Note_Nature_ID from '@/6.notes/Note_Nature_ID/Note_Nature_ID.svelte';
 	import Note_Wallpapers from '@/6.notes/Note_Wallpapers/Note_Wallpapers.svelte';
 	import Note_Ai_Assistant from '@/6.notes/Note_Ai_Assistant/Note_Ai_Assistant.svelte';
+	import Note_Solvo from '@/6.notes/Note_Solvo/Note_Solvo.svelte';
 </script>
 
 <section class='home'>
@@ -26,6 +27,10 @@
 
 	<NotesWrapper appName='ai-assistant-ios'>
 		<Note_Ai_Assistant />
+	</NotesWrapper>
+
+	<NotesWrapper appName='solvo-ios'>
+		<Note_Solvo />
 	</NotesWrapper>
 </section>
 

@@ -14,6 +14,7 @@
 	import Other from '@/pages/Other.svelte';
 
 	import {
+		currentFrame,
 		isTrialEnabled,
 		subscriptions,
 		activeSubscription,
@@ -40,11 +41,17 @@
 		isShowAnimation.update(() => !$isShowAnimation);
 	};
 
-	onMount(() => setFontSizes());
+	onMount(setFontSizes)
 </script>
 
+<div id='app' class:hide={$currentFrame.isVisible}>
+	<div class='frames frames_terms' class:show={$currentFrame.name === "terms" && $currentFrame.isVisible}>
+		<iframe src='../../terms/en/index.html?popup=true' scrolling='scrolling' title='terms' />
+	</div>
+	<div class='frames frames_privacy' class:show={$currentFrame.name === "privacy" && $currentFrame.isVisible}>
+		<iframe src='../../privacy/en/index.html?popup=true' scrolling='scrolling' title='privacy' />
+	</div>
 
-<div id='app'>
 	<Router primary={false}>
 		<header>
 			<div class='header-line'>
@@ -100,7 +107,6 @@
 			</Route>
 		</main>
 	</Router>
-
 </div>
 
 <style lang='scss' global>
@@ -140,7 +146,7 @@
     border-bottom: 1px solid gray;
 
     .header-line {
-		  display: flex;
+      display: flex;
     }
 
     .logo,
@@ -172,7 +178,11 @@
 
     .status-mode {
       margin-left: 10px;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+
+      @media (max-width: 1400px) {
+        font-size: 14px;
+      }
     }
 
     nav {
@@ -185,6 +195,10 @@
         margin: 0 5px;
         padding: 5px;
         border-radius: 4px;
+
+        @media (max-width: 1400px) {
+          font-size: 12px;
+        }
 
         &:hover {
           color: #fff;

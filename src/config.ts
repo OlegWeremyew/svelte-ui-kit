@@ -2,36 +2,36 @@ export const bannerId = "086";
 const placement = 'premium_banner'
 
 export enum Subscribes {
-  year = "wallpapers.live.sub.gr4.1y.3.trial_35",
-  week = "wallpapers.live.sub.gr2.1w",
-  weekTrial = "wallpapers.live.sub.gr4.1w.3.trial",
+  year = "solvo.sub.gr1.1y_40",
+  weekTrial = "solvo.sub.gr1.1w3trial_7",
+  week = 'solvo.sub.gr1.1w_7'
 }
 
 export const injectdata = {
   inapps: {
-    "aiart.lifetime_30": {
+    [Subscribes.year]: {
       duration: 1,
-      duration_type: "lifetime",
-      price: "29.99$"
+      duration_type: 'year',
+      price: '$39.99',
+      rated_price: '0.77$',
+      duration_rate: 0.01935
     },
-    "aiart.sub.gr2.1w_7": {
-      duration: 1,
-      duration_type: "week",
-      price: "6.99$"
-    },
-    "aiart.sub.gr2.1w3trial_5": {
+    [Subscribes.weekTrial]: {
       trial_available: true,
       duration: 1,
+      price: '$6.99',
       duration_type: 'week',
       trial_duration: 3,
       trial_duration_type: 'day',
-      price: '6.99$'
     },
+    [Subscribes.week]: {
+      duration: 1,
+      price: '$6.99',
+      duration_type: 'week',
+    }
   },
 };
 
-export const weekSubscription: string = "aiart.sub.gr2.1w_7"
-export const weekTrialSubscription: string = "aiart.sub.gr2.1w3trial_5"
 export const lifetimeSubscription: string = "aiart.lifetime_30"
 
 export const closeBannerStat = (bannerId: string): string => `http://callquietly.io/statistic?amplitude_event_name=event_banner_close&param=banner_id:${bannerId}`;

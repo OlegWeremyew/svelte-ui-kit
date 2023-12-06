@@ -7,7 +7,7 @@
     <span>{@html t(text)}</span>
 </li>
 
-<style lang="scss" global>
+<style lang="scss">
     .features__item {
         position: relative;
         width: 100%;
@@ -76,7 +76,7 @@
         left: -2.2rem;
         width: 1.2rem;
         height: 1.2rem;
-        background: url("../../../images/features/star.png") top / contain no-repeat;
+        background: url(@/images/features/eggs.png) top / contain no-repeat;
         transform: translateY(15%);
     }
 </style>

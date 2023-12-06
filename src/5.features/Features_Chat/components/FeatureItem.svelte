@@ -17,7 +17,7 @@
 </div>
 
 <style lang="scss">
-	@import "../../../styles/mixins.scss";
+  @import "./src/styles/mixins.scss";
 
 	.featuresItem {
 		display: flex;

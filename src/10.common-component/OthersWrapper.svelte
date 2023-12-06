@@ -4,9 +4,10 @@
 	export let isWhite = false;
 	export let isWhiteTitle = false;
 	export let isFull = false;
+	export let isHeight = false;
 </script>
 
-<div class='others-block' class:white={isWhite} class:full={isFull}>
+<div class='others-block' class:white={isWhite} class:full={isFull} class:height={isHeight}>
 	<h2>{animationText}</h2>
 	<h3
 		class='others-block__subtitle'
@@ -26,6 +27,8 @@
     margin: 0.5rem;
     border-radius: 2rem;
     border: 1px solid gray;
+    height: auto;
+    max-height: 550px;
 
     &:first-child {
       margin-left: 0;
@@ -37,7 +40,11 @@
 
     &.full {
       width: 100%;
-      max-width: 600px;
+      max-width: 700px;
+    }
+
+    &.height {
+      max-height: inherit;
     }
   }
 

@@ -10,6 +10,8 @@
 	import Title_Nature_ID from '@/4.titles/Title_Nature_ID/Title_Nature_ID.svelte';
 	import Title_In_Pulse from '@/4.titles/Title_In_Pulse/Title_In_Pulse.svelte';
 	import Title_Wallpapers from '@/4.titles/Title_Wallpapers/Title_Wallpapers.svelte';
+	import Title_Solvo from '@/4.titles/Title_Solvo/Title_Solvo.svelte';
+	import Title_Ai_Art_Android_AA from '@/4.titles/Title_Ai_Art_Android_AA/Title_Ai_Art_Android_AA.svelte';
 </script>
 
 <section class='page page--titles'>
@@ -51,6 +53,14 @@
 
 	<TitleWrapper appName='wallpapers-ios'>
 		<Title_Wallpapers/>
+	</TitleWrapper>
+
+	<TitleWrapper appName='solvo-ios'>
+		<Title_Solvo/>
+	</TitleWrapper>
+
+	<TitleWrapper appName='ai-arta-android'>
+		<Title_Ai_Art_Android_AA/>
 	</TitleWrapper>
 </section>
 

@@ -2,30 +2,30 @@
 
 ```javascript
 <script>
-	import {t} from "@/utils";
+	import { t } from '@/utils';
 </script>
 
-<section class="page_welcome-features">
+<section class='page_welcome-features'>
 	<table>
 		<tr>
-			<td class="page_welcome-feature-item">
-				<div class="page_welcome-feature-text">
-					<span class="divtext">{@html t("Answers to All Questions")}</span>
+			<td class='page_welcome-feature-item'>
+				<div class='page_welcome-feature-text'>
+					<span class='divtext'>{@html t("Answers to All Questions")}</span>
 				</div>
 			</td>
-			<td class="page_welcome-feature-item">
-				<div class="page_welcome-feature-text">
-					<span class="divtext">{@html t("Complete Chat Memory")}</span>
+			<td class='page_welcome-feature-item'>
+				<div class='page_welcome-feature-text'>
+					<span class='divtext'>{@html t("Complete Chat Memory")}</span>
 				</div>
 			</td>
-			<td class="page_welcome-feature-item">
-				<div class="page_welcome-feature-text">
-					<span class="divtext">{@html t("Fastest GPT Model")}</span>
+			<td class='page_welcome-feature-item'>
+				<div class='page_welcome-feature-text'>
+					<span class='divtext'>{@html t("Fastest GPT Model")}</span>
 				</div>
 			</td>
-			<td class="page_welcome-feature-item">
-				<div class="page_welcome-feature-text">
-					<span class="divtext">{@html t("Most Detailed Responses")}</span>
+			<td class='page_welcome-feature-item'>
+				<div class='page_welcome-feature-text'>
+					<span class='divtext'>{@html t("Most Detailed Responses")}</span>
 				</div>
 			</td>
 		</tr>
@@ -107,5 +107,6 @@
 }
 }
 }
+</style>
 </style>
 ```

@@ -14,7 +14,7 @@
 </script>
 
 <footer class="animated visible">
-  <div class="links">
+  <div class="fonts-links">
     <!-- svelte-ignore a11y-missing-attribute -->
     <a href="javascript:void(0);" class="terms" on:click={handleTermsButtonClick}>
       <span class="divtext">
@@ -41,7 +41,7 @@
       margin-bottom: 4.2rem;
     }
 
-    .links {
+    .fonts-links {
       position: relative;
       max-width: 87%;
       height: 1.5rem;

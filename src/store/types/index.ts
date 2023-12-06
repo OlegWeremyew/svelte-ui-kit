@@ -15,13 +15,12 @@ export interface ISubscriptions
   }> {}
 
 export interface IActiveSubscription
-  extends Writable<{    
+  extends Writable<{
     period: string;
     inapp: string;
   }> {}
 export interface IPrice extends Writable<String> {}
 export interface IBannerId extends Writable<string> {}
-export interface IYearEnabled extends Writable<boolean> {}
 export interface ISwitcherActive extends Writable<boolean> {}
 export interface ITrialAvailable extends Writable<boolean> {}
 export interface ISlide extends Writable<Number> {}

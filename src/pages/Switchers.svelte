@@ -8,6 +8,8 @@
 	import Switcher_Fonts_A from '@/1.switchers/Switcher_Fonts_A/Switcher_Fonts_A.svelte';
 	import Switcher_Wallpapers from '@/1.switchers/Switcher_Wallpapers/Switcher_Wallpapers.svelte';
 	import Switcher_Nature_ID_A from '@/1.switchers/Switcher_Nature_ID_A/Switcher_Nature_ID_A.svelte';
+	import Switcher_Solvo from '@/1.switchers/Switcher_Solvo/Switcher_Solvo.svelte';
+	import Switcher_Ai_Arta from '@/1.switchers/Switcher_Ai_Arta/Switcher_Ai_Arta.svelte';
 </script>
 
 <section class='page'>
@@ -42,6 +44,15 @@
 	<SwitchersWrapper appName='nature-id-ios'>
 		<Switcher_Nature_ID_A />
 	</SwitchersWrapper>
+
+	<SwitchersWrapper appName='solvo-ios'>
+		<Switcher_Solvo />
+	</SwitchersWrapper>
+
+	<SwitchersWrapper appName='ai-arta-android'>
+		<Switcher_Ai_Arta />
+	</SwitchersWrapper>
+
 </section>
 
 <style lang='scss'>
