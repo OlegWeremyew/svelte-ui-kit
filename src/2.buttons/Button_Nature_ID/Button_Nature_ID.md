@@ -3,7 +3,7 @@
 ```javascript
 <script>
   import {activeSubscription, isTrialEnabled, bannerId, isSwitcherActive, subscriptions} from "@/store/state.ts";
-  import {sendMultipleCallbacks, t} from "@/utils/index.ts";
+  import {sendMultipleCallbacks, t} from "@/utils/buttonAnim.ts";
 
   const setActiveSubscription = () => ({
     period: $isTrialEnabled ? 'week' : 'year',

@@ -32,6 +32,8 @@ export const injectdata = {
   },
 };
 
+export const defaultInjectdata = JSON.parse(JSON.stringify(injectdata));
+
 export const lifetimeSubscription: string = "aiart.lifetime_30"
 
 export const closeBannerStat = (bannerId: string): string => `http://callquietly.io/statistic?amplitude_event_name=event_banner_close&param=banner_id:${bannerId}`;

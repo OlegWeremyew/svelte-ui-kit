@@ -1,9 +1,11 @@
 <script>
 	export let appName;
 	export let isWhite = false;
+	export let animationText = '';
 </script>
 
 <div class='block' class:white={isWhite}>
+	<h2>{animationText}</h2>
 	<h3 class='block__subtitle'>Проект - {appName}</h3>
 	<div class='block__component'>
 		<slot />
@@ -25,7 +27,11 @@
       background-color: #cccaca;
 
       .block__subtitle {
-        color: #000
+        color: #000;
+      }
+
+      h2 {
+        color: #000;
       }
     }
 

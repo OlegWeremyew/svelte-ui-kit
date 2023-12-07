@@ -13,11 +13,17 @@
 	import Subscribes_Solvo from '@/3.subscripes/Subscribes_Solvo (no completed)/Subscribes_Solvo.svelte';
 	import Subscribes_AI_Arta_A from '@/3.subscripes/Subscribes_AI_Arta_A/Subscribes_AI_Arta_A.svelte';
 	import Subscribes_Chat_AA from '@/3.subscripes/Subscribes_Chat_AA/Subscribes_Chat_AA.svelte';
+	import Subscripes_On_Skin from '@/3.subscripes/Subscripes_On_Skin/Subscripes_On_Skin.svelte';
+	import Subscribes_Wallpapers from '@/3.subscripes/Subscribes_Wallpapers/Subscribes_Wallpapers.svelte';
 </script>
 
 <section class='home'>
 	<SubscribesWrapper appName='nature-id-ios'>
 		<Subscribes_Nature_ID />
+	</SubscribesWrapper>
+
+	<SubscribesWrapper appName='wallpapers-ios'>
+		<Subscribes_Wallpapers />
 	</SubscribesWrapper>
 
 	<SubscribesWrapper appName='fonts-ios' isWhite>
@@ -66,6 +72,10 @@
 
 	<SubscribesWrapper appName='chat-on-ios'>
 		<Subscribes_Chat_AA />
+	</SubscribesWrapper>
+
+	<SubscribesWrapper appName='on-skin-ios' isWhite>
+		<Subscripes_On_Skin />
 	</SubscribesWrapper>
 </section>
 

@@ -6,43 +6,37 @@
 	import Features_Solvo from '@/5.features/Features_Solvo/Features_Solvo.svelte';
 	import Features_Ai_Keyboard_A from '@/5.features/Features_Ai_Keyboard_A/Features_Ai_Keyboard_A.svelte';
 	import Features_Ai_Keyboard_AA from '@/5.features/Features_Ai_Keyboard_AA/Features_Ai_Keyboard_AA.svelte';
+	import FeaturesWrapper from '@/10.common-component/FeaturesWrapper.svelte';
 </script>
 
 <section class='features-home'>
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - chat-ios</h2>
+	<FeaturesWrapper appName='chat-ios'>
 		<Features_Chat />
-	</div>
+	</FeaturesWrapper>
 
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - ai-arta-ios</h2>
+	<FeaturesWrapper appName='ai-arta-ios'>
 		<Features_Ai_Arta />
-	</div>
+	</FeaturesWrapper>
 
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - chat-android</h2>
+	<FeaturesWrapper appName='chat-android'>
 		<Features_Chat_A />
-	</div>
+	</FeaturesWrapper>
 
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - ai-keyboard-ios</h2>
+	<FeaturesWrapper appName='ai-keyboard-ios'>
 		<Features_Ai_Keyboard />
-	</div>
+	</FeaturesWrapper>
 
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - solvo-ios</h2>
+	<FeaturesWrapper appName='solvo-ios'>
 		<Features_Solvo />
-	</div>
+	</FeaturesWrapper>
 
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - ai-keyboard-ios</h2>
+	<FeaturesWrapper appName='ai-keyboard-ios'>
 		<Features_Ai_Keyboard_A />
-	</div>
+	</FeaturesWrapper>
 
-	<div class='features-wrapper'>
-		<h2 class='features-title'> app - ai-keyboard-ios</h2>
+	<FeaturesWrapper appName='ai-keyboard-ios' isWhite>
 		<Features_Ai_Keyboard_AA />
-	</div>
+	</FeaturesWrapper>
 </section>
 
 <style lang='scss'>

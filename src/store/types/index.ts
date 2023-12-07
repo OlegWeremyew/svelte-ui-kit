@@ -21,6 +21,6 @@ export interface IActiveSubscription
   }> {}
 export interface IPrice extends Writable<String> {}
 export interface IBannerId extends Writable<string> {}
-export interface ISwitcherActive extends Writable<boolean> {}
-export interface ITrialAvailable extends Writable<boolean> {}
 export interface ISlide extends Writable<Number> {}
+
+export interface IBoolean extends Writable<boolean> {}

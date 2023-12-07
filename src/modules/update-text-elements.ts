@@ -4,12 +4,17 @@ import {
 	weekPrice,
 	trialWeekPrice,
 	trialAvailable as trialAvailableStore,
-	isSwitcherActive, yearPrice, yearPriceByWeek,
+	isSwitcherActive,
+	yearPrice,
+	yearPriceByWeek,
+	weekPriceTrialLoader,
+	weekPriceLoader,
+	yearPriceRatedLoader,
+	yearPriceLoader,
+	isPricesLoaded
 } from '@/store/state';
 import { setFontSizes } from '@/utils';
 import { get } from 'svelte/store';
-import * as config from '@/config';
-
 
 const global = window as any;
 
@@ -24,12 +29,19 @@ export function updateTextElements(): void {
 				trialAvailable = false;
 			}
 			lifetimePrice.update(() => '1.12$');
+			weekPriceTrialLoader.update(() => '1.12$');
 			weekPrice.update(() => '3.39$');
 			trialWeekPrice.update(() => '6.99$');
 			yearPrice.update(() => '39.99$');
+			weekPriceLoader.update(() => '39.99$');
+			yearPriceRatedLoader.update(() => '39.99$');
 			yearPriceByWeek.update(() => '2.99$');
+			yearPriceLoader.update(() => '2.99$');
 		});
 	}
+
+	isPricesLoaded.set(true);
+
 	trialAvailableStore.set(trialAvailable);
 	setFontSizes('footer', '.features', '.subscribe-price');
 }

@@ -3,7 +3,7 @@
 ```javascript
 <script>
   import {activeSubscription, isTrialEnabled} from "@/store/state.ts";
-  import {sendCallback, startAnimation} from "@/utils/index.ts";
+  import {sendCallback, startAnimation} from "@/utils/buttonAnim.ts";
   import {onMount} from 'svelte';
 
   onMount(startAnimation)

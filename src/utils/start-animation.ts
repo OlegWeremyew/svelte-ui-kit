@@ -1,4 +1,4 @@
-import { butonAnimation } from "@/constants";
+import { butonAnimation } from "@/images/lottie/buttonAnim";
 import { t, animationLoad } from "@/utils";
 
 export function startAnimation(trial = false) {

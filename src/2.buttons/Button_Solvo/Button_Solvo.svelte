@@ -7,7 +7,7 @@
 	const handlePurchase = () => {
 		sendMultipleCallbacks([
 			// `${getCallbackDomain()}/getpremium/${
-			// 	Subscribes[$activeSubscription]
+			// 	Subscribes_Wallpapers[$activeSubscription]
 			// }?banner_id=${$bannerId}`,
 		]);
 	};

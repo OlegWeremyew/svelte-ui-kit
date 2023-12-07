@@ -29,6 +29,7 @@
     border: 1px solid gray;
     height: auto;
     max-height: 550px;
+	  overflow: hidden;
 
     &:first-child {
       margin-left: 0;

@@ -17,6 +17,7 @@
 	import Buttons_Live_Wallpapers from '@/2.buttons/Buttons_Live_Wallpapers/Buttons_Live_Wallpapers.svelte';
 	import Buttons_Live_Wallpapers_A from '@/2.buttons/Buttons_Live_Wallpapers_A/Buttons_Live_Wallpapers_A.svelte';
 	import Button_Solvo from '@/2.buttons/Button_Solvo/Button_Solvo.svelte';
+	import Button_On_Skin_A from '@/2.buttons/Button_On_Skin_A/Button_On_Skin_A.svelte';
 </script>
 
 <section class='page-buttons'>
@@ -86,6 +87,10 @@
 
 	<ButtonsWrapper appName='solvo-ios'>
 		<Button_Solvo />
+	</ButtonsWrapper>
+
+	<ButtonsWrapper appName='on-skin-ios'>
+		<Button_On_Skin_A />
 	</ButtonsWrapper>
 </section>
 

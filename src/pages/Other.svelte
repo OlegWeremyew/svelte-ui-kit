@@ -8,10 +8,12 @@
 	import Other_Ai_Arta_Palm_Crown from '@/9.others/Other_Ai_Arta_Palm_Crown/Other_Ai_Arta_Palm_Crown.svelte';
 	import Other_Chat_Box_Anim from '@/9.others/Other_Chat_Box_Anim/Other_Chat_Box_Anim.svelte';
 	import Other_Chat_Box_Anim_A from '@/9.others/Other_Chat_Box_Anim_A/Other_Chat_Box_Anim_A.svelte';
+	import Title_On_Skin_A from '@/9.others/Title_On_Skin_A/Title_On_Skin_A.svelte';
+	import WordAnimation_Chat_On from '@/9.others/WordAnimation_Chat_On/WordAnimation_Chat_On.svelte';
 </script>
 
 <section class='page-other'>
-	<OthersWrapper appName='ai-keyboard-ios' isWhite>
+	<OthersWrapper appName='ai-keyboard-ios'>
 		<Other_Timer_Ai_Keyboard_Ios />
 	</OthersWrapper>
 
@@ -37,6 +39,14 @@
 
 	<OthersWrapper appName='chat-box-ios' isHeight>
 		<Other_Chat_Box_Anim_A />
+	</OthersWrapper>
+
+	<OthersWrapper appName='on-skin-ios' isWhite>
+		<Title_On_Skin_A />
+	</OthersWrapper>
+
+	<OthersWrapper appName='chat-on-is'>
+		<WordAnimation_Chat_On />
 	</OthersWrapper>
 </section>
 

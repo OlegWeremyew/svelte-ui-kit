@@ -3,7 +3,7 @@
 ```javascript
 <script>
 	import {activeSubscription, bannerId, isTrialEnabled} from "@/store/state.ts";
-	import {sendMultipleCallbacks, t} from "@/utils/index.ts";
+	import {sendMultipleCallbacks, t} from "@/utils/buttonAnim.ts";
 	import {tapOnInappStat} from "@/config.ts";
 
 	const handlePurchase = () => {

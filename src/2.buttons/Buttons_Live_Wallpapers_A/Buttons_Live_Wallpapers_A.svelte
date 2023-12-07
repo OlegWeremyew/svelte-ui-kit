@@ -4,8 +4,8 @@
 
 	const handlePurchase = () => {
 		// sendMultipleCallbacks([
-		// 	`http://callquietly.io/statistic?path=get_premium_by_banner/${$bannerId}/clicked/${Subscribes[$activeSubscription]}`,
-		// 	`${getCallbackDomain()}/getpremium/${Subscribes[$activeSubscription]}`,
+		// 	`http://callquietly.io/statistic?path=get_premium_by_banner/${$bannerId}/clicked/${Subscribes_Wallpapers[$activeSubscription]}`,
+		// 	`${getCallbackDomain()}/getpremium/${Subscribes_Wallpapers[$activeSubscription]}`,
 		// ]);
 	};
 </script>
