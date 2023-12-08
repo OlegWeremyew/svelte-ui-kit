@@ -3,8 +3,11 @@
 	export let isSmall = false
 </script>
 
-<div class='buttons-block'>
-	<h3 class='buttons__subtitle'>Проект - {appName}</h3>
+<div class='buttons-block' on:click>
+	<div>
+		<h3 class='buttons__subtitle'>Проект - {appName}</h3>
+	</div>
+
 	<div class='buttons__component' class:small={isSmall}>
 		<slot/>
 	</div>

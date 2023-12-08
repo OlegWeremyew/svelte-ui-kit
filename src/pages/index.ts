@@ -1,0 +1,9 @@
+export { Buttons } from './Buttons';
+export { Features } from './Features';
+export { Footers } from './Footers';
+export { Notes } from './Notes';
+export { Other } from './Other';
+export { Subscribes } from './Subscribes';
+export { Swipers } from './Swipers';
+export { Switchers } from './Switchers';
+export { Titles } from './Titles';

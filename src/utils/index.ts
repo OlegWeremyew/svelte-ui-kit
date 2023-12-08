@@ -9,3 +9,4 @@ export * from './start-animation';
 export * from './stop-animation';
 export * from './calculate-sale';
 export * from './animate-typing';
+export * from './set-value-to-clipboard';

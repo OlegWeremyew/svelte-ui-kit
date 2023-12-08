@@ -57,3 +57,5 @@ export const activeSubscription: IActiveSubscription = writable({
 });
 
 export const slide: ISlide = writable(1);
+
+export const search: any = writable('');

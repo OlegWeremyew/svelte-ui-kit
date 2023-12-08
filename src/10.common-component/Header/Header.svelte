@@ -1,6 +1,6 @@
 <script>
-	import Navbar from '@/10.common-component/Header/Navbar.svelte';
-	import ControlPanel from '@/10.common-component/Header/ControlPanel.svelte';
+	import Navbar from './items/Navbar.svelte';
+	import ControlPanel from './items/ControlPanel.svelte';
 	import { isShowControlPanel } from '@/store/state.ts';
 </script>
 

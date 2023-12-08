@@ -1,65 +1,18 @@
 <script>
 	import { onMount } from 'svelte';
+	import { Router } from 'svelte-navigator';
 	import { setFontSizes } from '@/utils';
-	import { Router, Route } from 'svelte-navigator';
-	import Switchers from '@/pages/Switchers.svelte';
-	import Buttons from '@/pages/Buttons.svelte';
-	import Titles from '@/pages/Titles.svelte';
-	import Features from '@/pages/Features.svelte';
-	import Subscribes from '@/pages/Subscribes.svelte';
-	import Notes from '@/pages/Notes.svelte';
-	import Footers from '@/pages/Footers.svelte';
-	import Swipers from '@/pages/Swipers.svelte';
-	import { PATHS } from '@/constants/router.ts';
-	import Other from '@/pages/Other.svelte';
-
-	import { currentFrame, } from '@/store/state.ts';
-	import Header from '@/10.common-component/Header/Header.svelte';
-
+	import { currentFrame } from '@/store/state.ts';
+	import { Header, AppRoutes, Frames } from '@/10.common-component';
 
 	onMount(setFontSizes);
 </script>
 
 <div id='app' class:hide={$currentFrame.isVisible}>
-	<div class='frames frames_terms' class:show={$currentFrame.name === "terms" && $currentFrame.isVisible}>
-		<iframe src='../../terms/en/index.html?popup=true' scrolling='scrolling' title='terms' />
-	</div>
-	<div class='frames frames_privacy' class:show={$currentFrame.name === "privacy" && $currentFrame.isVisible}>
-		<iframe src='../../privacy/en/index.html?popup=true' scrolling='scrolling' title='privacy' />
-	</div>
-
+	<Frames />
 	<Router primary={false}>
 		<Header />
-
-		<main class='main'>
-			<Route path={PATHS.SWITCHERS}>
-				<Switchers />
-			</Route>
-			<Route path={PATHS.BUTTONS}>
-				<Buttons />
-			</Route>
-			<Route path={PATHS.SUBSCRIBES}>
-				<Subscribes />
-			</Route>
-			<Route path={PATHS.TITLES}>
-				<Titles />
-			</Route>
-			<Route path={PATHS.FEATURES}>
-				<Features />
-			</Route>
-			<Route path={PATHS.NOTES}>
-				<Notes />
-			</Route>
-			<Route path={PATHS.FOOTERS}>
-				<Footers />
-			</Route>
-			<Route path={PATHS.SWIPERS}>
-				<Swipers />
-			</Route>
-			<Route path={PATHS.OTHER}>
-				<Other />
-			</Route>
-		</main>
+		<AppRoutes />
 	</Router>
 </div>
 
